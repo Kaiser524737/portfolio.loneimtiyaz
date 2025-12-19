@@ -3,7 +3,7 @@
             /* Warm Beige */
             --text-primary: #1a1a1a;
             /* Sharp Black */
-            --text-secondary: #8C8C8C;
+            --text-secondary: #767676;
             /* Silver */
             --accent-gold: #C5A059;
             /* Muted Gold */
@@ -23,9 +23,10 @@
             
         }
         
-        .reveal{
-         font-family: "Caveat", cursive;
+        .reveal {
+            font-family: "Caveat", cursive;
         }
+        
         /* --- 2. CUSTOM "NEGATIVE" CURSOR --- */
         .cursor-dot,
         .cursor-outline {
@@ -137,10 +138,10 @@
         
         .logo {
             font-weight: 500;
-            background-color: #FFFFFF2E;
+        
             color: white;
             border-radius: 5px;
-            font-size: 1.25rem;
+            font-size: 2rem;
             padding: 5px;
         }
         
@@ -202,6 +203,7 @@
         .stat h3 {
             font-size: 3rem;
             color: var(--text-primary);
+            font-family: serif;
         }
         
         .stat p {
@@ -280,7 +282,7 @@
         .timeline-path {
             fill: none;
             stroke: var(--accent-gold);
-            stroke-width: 6;
+            stroke-width: 20;
             /* Thicker Line */
             stroke-linecap: round;
         }
@@ -288,8 +290,8 @@
         .timeline-dot {
             fill: var(--bg-color);
             stroke: var(--text-primary);
-            stroke-width: 4;
-            r: 8;
+            stroke-width: 10;
+            r: 15;
             /* Larger Dots */
         }
         
@@ -298,7 +300,9 @@
             flex-direction: column;
             padding: 20px 0;
         }
-        
+        .timeline-content p{
+            font-weight: 400;
+        }
         .exp-item {
             /* Adjust height to align roughly with curve sections */
             min-height: 250px;
@@ -318,10 +322,13 @@
         .exp-title {
             font-size: 2rem;
             margin-bottom: 0.5rem;
+            font-family: Dancing Script;
+            font-weight: 750;
         }
         
         .exp-role {
-            font-family: 'Manrope';
+            font-family: Caveat;
+            font-size: 1.5rem;
             color: var(--text-secondary);
             margin-bottom: 1rem;
         }
@@ -374,12 +381,15 @@
             .hero-text h1 {
                 font-size: 4rem;
             }
-                    .stats-row {
+            
+            .stats-row {
                 justify-content: center;
             }
-            .reveal{
-            font-family: "Caveat", cursive;
+            
+            .reveal {
+                font-family: "Caveat", cursive;
             }
+            
             .about-grid {
                 grid-template-columns: 1fr;
             }
@@ -396,14 +406,23 @@
                 flex-direction: column;
                 gap: 1rem;
             }
-            nav{
+            
+            nav {
                 height: 60px;
                 backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
             }
             
             .menu {
                 display: none;
                 
             }
+            .timeline-graphic{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .experience-container{
+            grid-template-columns: 90px 1fr;
+        }
         }
