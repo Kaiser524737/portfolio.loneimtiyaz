@@ -138,18 +138,22 @@
         
         .logo {
             font-weight: 500;
-        
+            
             color: white;
             border-radius: 5px;
             font-size: 2rem;
             padding: 5px;
         }
         
+        .showmenu i {
+            display: none;
+        }
+        
         .menu a {
             margin-left: 40px;
             text-decoration: none;
             color: var(--text-secondary);
-            font-size: 0.85rem;
+            font-size: 1.1rem;
             text-transform: uppercase;
             font-weight: 600;
             letter-spacing: 1px;
@@ -300,9 +304,11 @@
             flex-direction: column;
             padding: 20px 0;
         }
-        .timeline-content p{
+        
+        .timeline-content p {
             font-weight: 400;
         }
+        
         .exp-item {
             /* Adjust height to align roughly with curve sections */
             min-height: 250px;
@@ -417,12 +423,20 @@
                 display: none;
                 
             }
-            .timeline-graphic{
-            position: relative;
-            height: 100%;
-            width: 100%;
-        }
-        .experience-container{
-            grid-template-columns: 90px 1fr;
-        }
+            
+            .timeline-graphic {
+                position: relative;
+                height: 100%;
+                width: 100%;
+            }
+   
+            .showmenu i {
+                display: block;
+                color: #fff;
+                font-size: 22px;
+            }
+            
+            .experience-container {
+                grid-template-columns: 90px 1fr;
+            }
         }
