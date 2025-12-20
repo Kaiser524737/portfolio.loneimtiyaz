@@ -58,19 +58,20 @@ animateCursor();
             const container = document.getElementById('canvas-container');
             const scene = new THREE.Scene();
             const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-            camera.position.z = 5;
+            camera.position.z = 4;
             
             const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
             renderer.setSize(window.innerWidth, window.innerHeight);
             container.appendChild(renderer.domElement);
             
             // Object: Gold Icosahedron
-            const geometry = new THREE.IcosahedronGeometry(3.5, 1);
+            const geometry = new THREE.IcosahedronGeometry(3.5, 3);
             const material = new THREE.MeshBasicMaterial({
-                color: 0x48245D,
                 wireframe: true,
+                wireframeLinewidth: 99,
+                color: 0xA48940,
                 transparent: true,
-                opacity: 0.9
+                opacity: 0.9,
             });
             const sphere = new THREE.Mesh(geometry, material);
             scene.add(sphere);
